@@ -1,0 +1,8 @@
+Type of slots
+======================
+1. Text slot
+2. Boolean slot
+3. Categorical slot
+4. Float slot
+5. List slot
+6. Unfeaturized slot

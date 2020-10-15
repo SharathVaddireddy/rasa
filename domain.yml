@@ -1,0 +1,32 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- balance
+- account
+- goodbye
+- yes
+- no
+- bot_challenge
+- out_of_scope
+entities:
+- ACCOUNT
+slots:
+  ACCOUNT:
+    type: text
+responses:
+  utter_greet_ask:
+  - text: Hello! how can i help you?
+  utter_ask_acc:
+  - text: Please enter your account number
+  utter_feedback:
+  - text: Are you happy with the conversation?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+actions:
+- action_info
